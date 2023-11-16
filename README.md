@@ -4,13 +4,8 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This project is a basic implememtation of web scraping data, here we are getting stock data like the dividend information froma website link where this information is free to read. 
+we pass in the link where this info is free to read and using chrome developer tools we find the element where we want to take the data - to do this we copy the html selector. then use document.querySelectorAll() to extract this data using the flutter packages below
+import 'package:http/http.dart' as http;
+import 'package:html/parser.dart' as htmlParser;
+import 'package:html/dom.dart' as dom;
